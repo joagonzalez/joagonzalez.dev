@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Joaquin Gonzalez</title>
+  <meta name="description" content="MSc. Telecommunications Engineer & Backend Developer — Buenos Aires, Argentina" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <nav>
+      <span class="nav-logo">joagonzalez</span>
+      <ul>
+        <li><a href="#about">whoami</a></li>
+        <li><a href="#projects">projects</a></li>
+        <li><a href="#contact">ping</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Hero -->
+    <section id="hero">
+      <div class="prompt-line">
+        <span class="prompt-symbol">~$</span>
+        <span class="typed" id="typed-text"></span><span class="cursor">|</span>
+      </div>
+      <h1>Joaquin Gonzalez</h1>
+      <p class="tagline">Telecommunications Engineer &amp; MSc. Management + Analytics</p>
+      <p class="location">
+        <span class="muted">Buenos Aires, Argentina</span>
+      </p>
+      <div class="hero-links">
+        <a href="https://github.com/joagonzalez" target="_blank" rel="noopener" class="btn">GitHub</a>
+        <a href="https://www.linkedin.com/in/joagonzalez/" target="_blank" rel="noopener" class="btn btn-outline">LinkedIn</a>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+      <div class="section-header">
+        <span class="prompt-symbol">&gt;</span> <span class="section-cmd">whoami</span>
+      </div>
+      <div class="about-content">
+        <p>
+          Backend engineer and infrastructure specialist based in Buenos Aires. I work across
+          <strong>backend development</strong>, <strong>MLOps</strong>, <strong>DevOps</strong>,
+          and <strong>Network Automation</strong> — building systems that are reliable, reproducible,
+          and observable.
+        </p>
+        <p>
+          My background combines a Telecommunications Engineering degree with an MSc. in Management
+          and Analytics. I'm particularly interested in the intersection of software-defined
+          infrastructure and machine learning operations.
+        </p>
+
+        <div class="skills-grid">
+          <div class="skill-group">
+            <h3>Backend &amp; MLOps</h3>
+            <ul>
+              <li>Python</li>
+              <li>ML pipelines</li>
+              <li>API design</li>
+              <li>Tools dev</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3>DevOps &amp; Infra</h3>
+            <ul>
+              <li>Kubernetes</li>
+              <li>GitHub Actions</li>
+              <li>Infrastructure as Code</li>
+              <li>Docker</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3>Networking</h3>
+            <ul>
+              <li>SDN / Ryu</li>
+              <li>Network Automation</li>
+              <li>QoS</li>
+              <li>OpenVuln API</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+      <div class="section-header">
+        <span class="prompt-symbol">&gt;</span> <span class="section-cmd">ls ./projects</span>
+      </div>
+      <div class="project-grid">
+
+        <a class="project-card" href="https://github.com/joagonzalez/sdn-qos" target="_blank" rel="noopener">
+          <div class="project-meta">
+            <span class="project-lang lang-js">JavaScript</span>
+            <span class="project-stars">&#9733; 7</span>
+          </div>
+          <h3>sdn-qos</h3>
+          <p>QoS and call admission control implementation using the Ryu Framework for SDN networks.</p>
+        </a>
+
+        <a class="project-card" href="https://github.com/joagonzalez/pyconar-2020" target="_blank" rel="noopener">
+          <div class="project-meta">
+            <span class="project-lang lang-py">Python</span>
+            <span class="project-stars">&#9733; 3</span>
+          </div>
+          <h3>pyconar-2020</h3>
+          <p>Materials from PyconAR 2020 talk on SDN layer 2 switch development with Ryu.</p>
+        </a>
+
+        <a class="project-card" href="https://github.com/joagonzalez/python-seed-v2" target="_blank" rel="noopener">
+          <div class="project-meta">
+            <span class="project-lang lang-py">Python</span>
+          </div>
+          <h3>python-seed-v2</h3>
+          <p>Python template repository with Kubernetes and GitHub Actions CI/CD out of the box.</p>
+        </a>
+
+        <a class="project-card" href="https://github.com/joagonzalez/bot-cisco-vulnerability" target="_blank" rel="noopener">
+          <div class="project-meta">
+            <span class="project-lang lang-py">Python</span>
+            <span class="project-stars">&#9733; 1</span>
+          </div>
+          <h3>bot-cisco-vulnerability</h3>
+          <p>Telegram bot for querying Cisco IOS vulnerability data via the OpenVuln API.</p>
+        </a>
+
+        <a class="project-card" href="https://github.com/joagonzalez/gcba-api" target="_blank" rel="noopener">
+          <div class="project-meta">
+            <span class="project-lang lang-py">Python</span>
+            <span class="project-stars">&#9733; 1</span>
+          </div>
+          <h3>gcba-api</h3>
+          <p>GCBA API visualization project for Buenos Aires city open data.</p>
+        </a>
+
+        <a class="project-card" href="https://github.com/joagonzalez?tab=repositories" target="_blank" rel="noopener" aria-label="View all repositories">
+          <div class="project-meta">
+            <span class="project-lang muted">78 public repos</span>
+          </div>
+          <h3>more →</h3>
+          <p>Browse all repositories on GitHub.</p>
+        </a>
+
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <div class="section-header">
+        <span class="prompt-symbol">&gt;</span> <span class="section-cmd">ping joagonzalez</span>
+      </div>
+      <p>Find me on the internet or drop me a message.</p>
+      <ul class="contact-list">
+        <li>
+          <span class="contact-label">email</span>
+          <a href="mailto:joagonzalez@gmail.com">joagonzalez@gmail.com</a>
+        </li>
+        <li>
+          <span class="contact-label">github</span>
+          <a href="https://github.com/joagonzalez" target="_blank" rel="noopener">github.com/joagonzalez</a>
+        </li>
+        <li>
+          <span class="contact-label">linkedin</span>
+          <a href="https://www.linkedin.com/in/joagonzalez/" target="_blank" rel="noopener">linkedin.com/in/joagonzalez</a>
+        </li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer>
+    <span class="prompt-symbol">~$</span> <span class="muted">Joaquin Gonzalez &copy; 2026</span>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
