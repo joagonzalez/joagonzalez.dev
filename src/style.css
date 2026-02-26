@@ -12,8 +12,8 @@
   --border: #222;
   --text: #d8d8d8;
   --muted: #666;
-  --accent: #5555ff;
-  --accent-dim: rgba(85, 85, 255, 0.12);
+  --accent: #7B7BFF;
+  --accent-dim: rgba(123, 123, 255, 0.12);
   --green: #3ddc84;
   --font: 'Segoe UI', system-ui, -apple-system, sans-serif;
   --mono: 'Courier New', Courier, monospace;
@@ -186,7 +186,12 @@ section:last-child { border-bottom: none; }
   color: var(--text);
   margin-bottom: 1rem;
 }
-#about p:last-of-type { margin-bottom: 2.5rem; }
+.previously {
+  font-family: var(--mono);
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-bottom: 2rem;
+}
 
 .skills-grid {
   display: grid;
@@ -207,6 +212,12 @@ section:last-child { border-bottom: none; }
   list-style: none;
 }
 
+.skill-group p {
+  font-size: 0.85rem;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
 .skill-group li {
   font-size: 0.9rem;
   color: var(--muted);
@@ -215,6 +226,46 @@ section:last-child { border-bottom: none; }
 }
 .skill-group li::before {
   content: '- ';
+  color: var(--border);
+}
+
+/* ── Timeline ─────────────────────────────────────── */
+.timeline {
+  margin-bottom: 2rem;
+  border-left: 1px solid var(--border);
+  padding-left: 1.2rem;
+}
+
+.timeline-item {
+  display: flex;
+  gap: 1.5rem;
+  padding: 0.35rem 0;
+  font-family: var(--mono);
+  font-size: 0.82rem;
+}
+
+.timeline-date {
+  color: var(--muted);
+  min-width: 10rem;
+  flex-shrink: 0;
+}
+
+.timeline-role {
+  color: var(--text);
+}
+
+/* ── Education ────────────────────────────────────── */
+.education-line {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  font-family: var(--mono);
+  font-size: 0.8rem;
+  color: var(--muted);
+  margin-bottom: 2.5rem;
+}
+
+.edu-sep {
   color: var(--border);
 }
 
@@ -327,6 +378,10 @@ footer {
 
 /* ── Responsive ────────────────────────────────────── */
 @media (max-width: 600px) {
-  nav ul { gap: 1.2rem; }
+  nav ul { gap: 1rem; }
   .project-grid { grid-template-columns: 1fr; }
+  .timeline-item { flex-direction: column; gap: 0.2rem; }
+  .timeline-date { min-width: unset; }
+  .education-line { flex-direction: column; }
+  .edu-sep { display: none; }
 }
