@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Joaquin Gonzalez</title>
-  <meta name="description" content="MSc. Telecommunications Engineer & Backend Developer — Buenos Aires, Argentina" />
+  <meta name="description" content="Software Engineer — AI & Distributed Systems · Buenos Aires, Argentina" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -14,7 +14,8 @@
       <span class="nav-logo">joagonzalez</span>
       <ul>
         <li><a href="#about">whoami</a></li>
-        <li><a href="#projects">projects</a></li>
+        <li><a href="#research">research</a></li>
+        <li><a href="https://blog.joagonzalez.dev/" target="_blank" rel="noopener">blog</a></li>
         <li><a href="#contact">ping</a></li>
       </ul>
     </nav>
@@ -29,13 +30,15 @@
         <span class="typed" id="typed-text"></span><span class="cursor">|</span>
       </div>
       <h1>Joaquin Gonzalez</h1>
-      <p class="tagline">Telecommunications Engineer &amp; MSc. Management + Analytics</p>
+      <p class="tagline">Software Engineer — AI &amp; Distributed Systems</p>
+      <p class="sub-tagline">MSc. AI (in progress) · MSc. Management + Analytics · Telecommunications Engineer</p>
       <p class="location">
         <span class="muted">Buenos Aires, Argentina</span>
       </p>
       <div class="hero-links">
         <a href="https://github.com/joagonzalez" target="_blank" rel="noopener" class="btn">GitHub</a>
         <a href="https://www.linkedin.com/in/joagonzalez/" target="_blank" rel="noopener" class="btn btn-outline">LinkedIn</a>
+        <a href="https://blog.joagonzalez.dev/" target="_blank" rel="noopener" class="btn btn-outline">Blog</a>
       </div>
     </section>
 
@@ -46,109 +49,146 @@
       </div>
       <div class="about-content">
         <p>
-          Backend engineer and infrastructure specialist based in Buenos Aires. I work across
-          <strong>backend development</strong>, <strong>MLOps</strong>, <strong>DevOps</strong>,
-          and <strong>Network Automation</strong> — building systems that are reliable, reproducible,
-          and observable.
+          Software engineer based in Buenos Aires. I work across distributed systems,
+          platform engineering, and applied AI — mostly at the intersection of the three.
         </p>
         <p>
-          My background combines a Telecommunications Engineering degree with an MSc. in Management
-          and Analytics. I'm particularly interested in the intersection of software-defined
-          infrastructure and machine learning operations.
+          That includes building an NLP→PromQL agent so SRE teams can query observability
+          stacks in plain language, and running MILP models to optimize VM allocation across
+          datacenter clusters. I hold an MSc. in Management + Analytics (UTDT) and am working
+          on an MSc. in AI at the University of Buenos Aires.
+        </p>
+        <p>
+          Before that: network automation, SDN research, a few IEEE papers, and enough time
+          teaching Computer Networks to know which parts are actually hard.
         </p>
 
         <div class="skills-grid">
           <div class="skill-group">
-            <h3>Backend &amp; MLOps</h3>
+            <h3>AI &amp; Agents</h3>
             <ul>
-              <li>Python</li>
+              <li>Agent design</li>
+              <li>NLP pipelines</li>
+              <li>Optimization (MILP)</li>
               <li>ML pipelines</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3>Backend &amp; Platform</h3>
+            <ul>
+              <li>System design</li>
               <li>API design</li>
-              <li>Tools dev</li>
+              <li>Distributed systems</li>
+              <li>Python · Go</li>
             </ul>
           </div>
           <div class="skill-group">
             <h3>DevOps &amp; Infra</h3>
             <ul>
-              <li>Kubernetes</li>
-              <li>GitHub Actions</li>
+              <li>Platform engineering</li>
               <li>Infrastructure as Code</li>
-              <li>Docker</li>
-            </ul>
-          </div>
-          <div class="skill-group">
-            <h3>Networking</h3>
-            <ul>
-              <li>SDN / Ryu</li>
-              <li>Network Automation</li>
-              <li>QoS</li>
-              <li>OpenVuln API</li>
+              <li>Observability</li>
+              <li>CI/CD</li>
             </ul>
           </div>
         </div>
+
+        <p class="credentials">IEEE Member · AWS ML Specialty · AWS Developer Associate</p>
+        <p class="personal-line">// father · husband · sci-fi reader · radio amateur LU7AJG</p>
       </div>
     </section>
 
-    <!-- Projects -->
-    <section id="projects">
+    <!-- Research -->
+    <section id="research">
       <div class="section-header">
-        <span class="prompt-symbol">&gt;</span> <span class="section-cmd">ls ./projects</span>
+        <span class="prompt-symbol">&gt;</span> <span class="section-cmd">cat ./research</span>
       </div>
-      <div class="project-grid">
 
-        <a class="project-card" href="https://github.com/joagonzalez/sdn-qos" target="_blank" rel="noopener">
-          <div class="project-meta">
-            <span class="project-lang lang-js">JavaScript</span>
-            <span class="project-stars">&#9733; 7</span>
-          </div>
-          <h3>sdn-qos</h3>
-          <p>QoS and call admission control implementation using the Ryu Framework for SDN networks.</p>
-        </a>
+      <div class="research-list">
 
-        <a class="project-card" href="https://github.com/joagonzalez/pyconar-2020" target="_blank" rel="noopener">
-          <div class="project-meta">
-            <span class="project-lang lang-py">Python</span>
-            <span class="project-stars">&#9733; 3</span>
+        <div class="research-item">
+          <div class="research-meta">
+            <span class="research-badge badge-thesis">thesis</span>
+            <span class="research-venue">Specialization in AI · University of Buenos Aires · 2026</span>
           </div>
-          <h3>pyconar-2020</h3>
-          <p>Materials from PyconAR 2020 talk on SDN layer 2 switch development with Ryu.</p>
-        </a>
+          <h3 class="research-title">Optimizing Automated Interventions Against Hate Speech in Social Networks</h3>
+          <p class="research-desc">Built the analytics platform and toxicity classification module for Normsy, a system that generates automated interventions on social networks to reduce hate speech propagation. Designed batch and real-time data pipelines, a repeatable LLM evaluation framework with A/B testing support, and fine-tuned Gemini models on Vertex AI for toxicity classification on X.com posts. Work done in collaboration with Data Voices and Civic Health Project.</p>
+          <p class="research-stack">Python · Apache Airflow · Kafka · Debezium · PostgreSQL · Grafana · Vertex AI · Gemini · LLM fine-tuning</p>
+        </div>
 
-        <a class="project-card" href="https://github.com/joagonzalez/python-seed-v2" target="_blank" rel="noopener">
-          <div class="project-meta">
-            <span class="project-lang lang-py">Python</span>
+        <div class="research-item">
+          <div class="research-meta">
+            <span class="research-badge badge-thesis">thesis</span>
+            <span class="research-venue">MSc. Management + Analytics · UTDT · 2023</span>
+            <a href="https://repositorio.utdt.edu/items/48ad25bb-b18c-4c99-b2dd-2f1e19868d7c" target="_blank" rel="noopener" class="research-link">↗</a>
           </div>
-          <h3>python-seed-v2</h3>
-          <p>Python template repository with Kubernetes and GitHub Actions CI/CD out of the box.</p>
-        </a>
+          <h3 class="research-title">ASR for Children with Hearing Loss</h3>
+          <p class="research-desc">Fine-tuned Whisper and assembled a novel dataset for automatic speech recognition of children with cochlear implants — an underrepresented population in ASR training data. Built a diarization + transcription + fine-tuning pipeline to support clinical diagnosis at Di Tella's speech pathology lab.</p>
+          <p class="research-stack">Whisper · Python · transfer learning · diarization · data augmentation</p>
+        </div>
 
-        <a class="project-card" href="https://github.com/joagonzalez/bot-cisco-vulnerability" target="_blank" rel="noopener">
-          <div class="project-meta">
-            <span class="project-lang lang-py">Python</span>
-            <span class="project-stars">&#9733; 1</span>
+        <div class="research-item">
+          <div class="research-meta">
+            <span class="research-badge badge-book">book</span>
+            <span class="research-venue">Springer Nature · 2022</span>
+            <a href="https://doi.org/10.1007/978-1-4842-8689-0" target="_blank" rel="noopener" class="research-link">↗</a>
           </div>
-          <h3>bot-cisco-vulnerability</h3>
-          <p>Telegram bot for querying Cisco IOS vulnerability data via the OpenVuln API.</p>
-        </a>
+          <h3 class="research-title">Technical Reviewer — Introduction to Infrastructure as Code</h3>
+          <p class="research-desc">Technical review of <em>Introduction to Infrastructure as Code: A Brief Guide to the Future of DevOps</em>. Corrections and proposals on IaC concepts, Terraform, DevOps practices, diagrams, and code examples.</p>
+        </div>
 
-        <a class="project-card" href="https://github.com/joagonzalez/gcba-api" target="_blank" rel="noopener">
-          <div class="project-meta">
-            <span class="project-lang lang-py">Python</span>
-            <span class="project-stars">&#9733; 1</span>
+        <div class="research-item">
+          <div class="research-meta">
+            <span class="research-badge badge-thesis">thesis</span>
+            <span class="research-venue">Telecommunications Engineering · UNSAM · 2020</span>
+            <a href="https://ri.unsam.edu.ar/handle/123456789/1761" target="_blank" rel="noopener" class="research-link">↗</a>
           </div>
-          <h3>gcba-api</h3>
-          <p>GCBA API visualization project for Buenos Aires city open data.</p>
-        </a>
+          <h3 class="research-title">Real-time QoS and Call Admission Control in SDN Networks</h3>
+          <p class="research-desc">Engineering degree thesis on designing and implementing real-time Quality of Service and Call Admission Control mechanisms in Software-Defined Networks using the Ryu framework. Connected to the <code>sdn-qos</code> open-source repo and the 2018 IEEE paper.</p>
+          <p class="research-stack">Python · Ryu · OpenFlow · QoS · SDN</p>
+        </div>
 
-        <a class="project-card" href="https://github.com/joagonzalez?tab=repositories" target="_blank" rel="noopener" aria-label="View all repositories">
-          <div class="project-meta">
-            <span class="project-lang muted">78 public repos</span>
+        <div class="research-item">
+          <div class="research-meta">
+            <span class="research-badge badge-ieee">ieee</span>
+            <span class="research-venue">CACIDI 2018 · Buenos Aires</span>
+            <a href="https://ieeexplore.ieee.org/document/8584371" target="_blank" rel="noopener" class="research-link">↗</a>
           </div>
-          <h3>more →</h3>
-          <p>Browse all repositories on GitHub.</p>
-        </a>
+          <h3 class="research-title">Using SDN for Call Admission Control and VoIP Applications</h3>
+          <p class="research-desc">Research on applying Software-Defined Networking to implement call admission control and QoS policies for VoIP traffic.</p>
+        </div>
+
+        <div class="research-item">
+          <div class="research-meta">
+            <span class="research-badge badge-ieee">ieee</span>
+            <span class="research-venue">CACIDI 2018 · Buenos Aires</span>
+          </div>
+          <h3 class="research-title">Hot Addition of Member Nodes to WSNs using PORME Routing Protocol</h3>
+          <p class="research-desc">Study on dynamically adding nodes to Wireless Sensor Networks using the PORME routing protocol without restarting the Cluster Head.</p>
+        </div>
 
       </div>
+
+      <div class="talks-section">
+        <div class="section-subheader">
+          <span class="prompt-symbol">&gt;</span> <span class="section-cmd">ls ./talks</span>
+        </div>
+        <ul class="talks-list">
+          <li>
+            <a href="https://www.youtube.com/watch?v=xIz8NlsHeFk&list=PLtwHCKHTTg_Ht0Lvqq5oloftTcjrfvaIp&index=27" target="_blank" rel="noopener">
+              <span class="talk-event">PyConAR 2020</span>
+              <span class="talk-title">SDN layer 2 switch development with Ryu</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/watch?v=9meabWy58cc" target="_blank" rel="noopener">
+              <span class="talk-event">code4andreani 2020</span>
+              <span class="talk-title">DevOps toolkit — Ansible, Docker, Git &amp; Jenkins</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
     </section>
 
     <!-- Contact -->
@@ -169,6 +209,10 @@
         <li>
           <span class="contact-label">linkedin</span>
           <a href="https://www.linkedin.com/in/joagonzalez/" target="_blank" rel="noopener">linkedin.com/in/joagonzalez</a>
+        </li>
+        <li>
+          <span class="contact-label">blog</span>
+          <a href="https://blog.joagonzalez.dev/" target="_blank" rel="noopener">blog.joagonzalez.dev</a>
         </li>
       </ul>
     </section>

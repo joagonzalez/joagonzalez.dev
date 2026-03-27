@@ -38,6 +38,12 @@ a:hover { text-decoration: underline; }
 
 strong { color: #fff; }
 
+code {
+  font-family: var(--mono);
+  font-size: 0.85em;
+  color: var(--green);
+}
+
 /* ── Nav ───────────────────────────────────────────── */
 header {
   position: sticky;
@@ -102,6 +108,16 @@ section:last-child { border-bottom: none; }
   gap: 0.4rem;
 }
 
+.section-subheader {
+  font-family: var(--mono);
+  font-size: 0.85rem;
+  margin-top: 3rem;
+  margin-bottom: 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
 .prompt-symbol {
   color: var(--accent);
   font-family: var(--mono);
@@ -147,7 +163,14 @@ section:last-child { border-bottom: none; }
 .tagline {
   font-size: 1.05rem;
   color: var(--text);
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.25rem;
+}
+
+.sub-tagline {
+  font-family: var(--mono);
+  font-size: 0.78rem;
+  color: var(--muted);
+  margin-bottom: 0.5rem;
 }
 
 .location {
@@ -186,12 +209,13 @@ section:last-child { border-bottom: none; }
   color: var(--text);
   margin-bottom: 1rem;
 }
-#about p:last-of-type { margin-bottom: 2.5rem; }
 
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 1.5rem;
+  margin-top: 2.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .skill-group h3 {
@@ -218,64 +242,127 @@ section:last-child { border-bottom: none; }
   color: var(--border);
 }
 
-/* ── Projects ──────────────────────────────────────── */
-.project-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 1px;
-  border: 1px solid var(--border);
-  border-radius: 4px;
-  overflow: hidden;
-}
-
-.project-card {
-  display: block;
-  background: var(--surface);
-  padding: 1.5rem;
-  border: none;
-  color: var(--text);
-  transition: background 0.2s;
-}
-.project-card:hover {
-  background: var(--accent-dim);
-  text-decoration: none;
-}
-
-.project-meta {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-  margin-bottom: 0.75rem;
-}
-
-.project-lang {
-  font-family: var(--mono);
-  font-size: 0.72rem;
-  padding: 0.15rem 0.5rem;
-  border-radius: 2px;
-  border: 1px solid var(--border);
-  color: var(--muted);
-}
-.lang-py { color: #3572a5; border-color: #3572a5; }
-.lang-js { color: #f1e05a; border-color: #f1e05a; }
-
-.project-stars {
+.credentials {
   font-family: var(--mono);
   font-size: 0.75rem;
   color: var(--muted);
+  margin-bottom: 0.5rem !important;
 }
 
-.project-card h3 {
+.personal-line {
+  font-family: var(--mono);
+  font-size: 0.78rem;
+  color: var(--border);
+  margin-bottom: 0 !important;
+}
+
+/* ── Research ──────────────────────────────────────── */
+.research-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.research-item {
+  padding: 1.5rem 0;
+  border-bottom: 1px solid var(--border);
+}
+.research-item:last-child { border-bottom: none; }
+
+.research-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.research-badge {
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  padding: 0.15rem 0.5rem;
+  border-radius: 2px;
+  border: 1px solid;
+}
+
+.badge-thesis {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+.badge-ieee {
+  color: #3572a5;
+  border-color: #3572a5;
+}
+
+.badge-book {
+  color: var(--green);
+  border-color: var(--green);
+}
+
+.research-venue {
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  color: var(--muted);
+  flex: 1;
+}
+
+.research-link {
+  font-family: var(--mono);
+  font-size: 0.8rem;
+  color: var(--muted);
+  transition: color 0.2s;
+}
+.research-link:hover { color: var(--accent); text-decoration: none; }
+
+.research-title {
   font-family: var(--mono);
   font-size: 0.95rem;
   color: #fff;
   margin-bottom: 0.4rem;
 }
 
-.project-card p {
-  font-size: 0.85rem;
+.research-desc {
+  font-size: 0.88rem;
   color: var(--muted);
-  line-height: 1.5;
+  line-height: 1.6;
+  max-width: 62ch;
+  margin-bottom: 0.4rem;
+}
+
+.research-stack {
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  color: var(--border);
+}
+
+/* ── Talks ─────────────────────────────────────────── */
+.talks-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.talks-list a {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  font-family: var(--mono);
+  font-size: 0.85rem;
+  color: var(--text);
+  transition: color 0.2s;
+}
+.talks-list a:hover { color: var(--accent); text-decoration: none; }
+
+.talk-event {
+  color: var(--muted);
+  font-size: 0.78rem;
+  min-width: 10rem;
+  flex-shrink: 0;
+}
+
+.talk-title {
+  color: var(--text);
 }
 
 /* ── Contact ───────────────────────────────────────── */
@@ -328,5 +415,6 @@ footer {
 /* ── Responsive ────────────────────────────────────── */
 @media (max-width: 600px) {
   nav ul { gap: 1.2rem; }
-  .project-grid { grid-template-columns: 1fr; }
+  .talk-event { min-width: 0; }
+  .talks-list a { flex-direction: column; gap: 0.2rem; }
 }

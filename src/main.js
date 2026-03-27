@@ -1,5 +1,12 @@
 // Typing animation in hero
-const phrases = ['whoami', 'cat about.txt', 'ls ./projects', 'ping joagonzalez'];
+const phrases = [
+  'whoami',
+  'cat about.txt',
+  'python agent.py --mode nlp-to-promql',
+  'optimize --solver MILP --target datacenter-capacity',
+  'cat ./research',
+  'ping joagonzalez',
+];
 let phraseIndex = 0;
 let charIndex = 0;
 let deleting = false;
