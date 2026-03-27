@@ -169,13 +169,14 @@ section:last-child { border-bottom: none; }
 .sub-tagline {
   font-family: var(--mono);
   font-size: 0.78rem;
-  color: var(--muted);
+  color: #999;
   margin-bottom: 0.5rem;
 }
 
 .location {
   font-family: var(--mono);
   font-size: 0.8rem;
+  color: #999;
   margin-bottom: 2rem;
 }
 
@@ -221,7 +222,7 @@ section:last-child { border-bottom: none; }
 .skill-group h3 {
   font-family: var(--mono);
   font-size: 0.75rem;
-  color: var(--accent);
+  color: var(--green);
   text-transform: uppercase;
   letter-spacing: 0.1em;
   margin-bottom: 0.75rem;
@@ -302,7 +303,7 @@ section:last-child { border-bottom: none; }
 .research-venue {
   font-family: var(--mono);
   font-size: 0.75rem;
-  color: var(--muted);
+  color: #999;
   flex: 1;
 }
 
@@ -318,6 +319,7 @@ section:last-child { border-bottom: none; }
   font-family: var(--mono);
   font-size: 0.95rem;
   color: #fff;
+  font-weight: 600;
   margin-bottom: 0.4rem;
 }
 
@@ -355,7 +357,7 @@ section:last-child { border-bottom: none; }
 .talks-list a:hover { color: var(--accent); text-decoration: none; }
 
 .talk-event {
-  color: var(--muted);
+  color: #999;
   font-size: 0.78rem;
   min-width: 10rem;
   flex-shrink: 0;
@@ -367,7 +369,7 @@ section:last-child { border-bottom: none; }
 
 /* ── Contact ───────────────────────────────────────── */
 #contact > p {
-  color: var(--muted);
+  color: #999;
   margin-bottom: 1.5rem;
   font-family: var(--mono);
   font-size: 0.85rem;
@@ -389,7 +391,7 @@ section:last-child { border-bottom: none; }
 }
 
 .contact-label {
-  color: var(--muted);
+  color: #999;
   min-width: 6rem;
   font-size: 0.8rem;
 }
