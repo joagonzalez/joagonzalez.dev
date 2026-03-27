@@ -39,7 +39,7 @@ Then open http://localhost:8080.
 
 ### GitHub Pages (production)
 
-The site is deployed automatically to GitHub Pages on every push to `main` via the workflow at `.github/workflows/deploy.yml`.
+The site is deployed automatically to GitHub Pages on every push to `master` via the workflow at `.github/workflows/deploy.yml`.
 
 **One-time setup:**
 
