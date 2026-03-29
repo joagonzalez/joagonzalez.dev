@@ -11,16 +11,16 @@
   --surface: #141414;
   --border: #222;
   --text: #d8d8d8;
-  --muted: #666;
-  --accent: #5555ff;
-  --accent-dim: rgba(85, 85, 255, 0.12);
+  --muted: #888;
+  --accent: #7b7bff;
+  --accent-dim: rgba(123, 123, 255, 0.12);
   --green: #3ddc84;
   --font: 'Segoe UI', system-ui, -apple-system, sans-serif;
   --mono: 'Courier New', Courier, monospace;
   --max-width: 740px;
 }
 
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; font-size: 17px; }
 
 body {
   background: var(--bg);
@@ -169,14 +169,14 @@ section:last-child { border-bottom: none; }
 .sub-tagline {
   font-family: var(--mono);
   font-size: 0.78rem;
-  color: #999;
+  color: #aaa;
   margin-bottom: 0.5rem;
 }
 
 .location {
   font-family: var(--mono);
   font-size: 0.8rem;
-  color: #999;
+  color: #aaa;
   margin-bottom: 2rem;
 }
 
@@ -303,7 +303,7 @@ section:last-child { border-bottom: none; }
 .research-venue {
   font-family: var(--mono);
   font-size: 0.75rem;
-  color: #999;
+  color: #aaa;
   flex: 1;
 }
 
@@ -345,31 +345,34 @@ section:last-child { border-bottom: none; }
   gap: 0.75rem;
 }
 
-.talks-list a {
+.talks-list li {
   display: flex;
   align-items: baseline;
   gap: 1rem;
   font-family: var(--mono);
   font-size: 0.85rem;
-  color: var(--text);
-  transition: color 0.2s;
 }
-.talks-list a:hover { color: var(--accent); text-decoration: none; }
 
 .talk-event {
-  color: #999;
+  color: #aaa;
   font-size: 0.78rem;
   min-width: 10rem;
   flex-shrink: 0;
+  transition: color 0.2s;
+  text-decoration: none;
 }
+.talk-event:hover { color: var(--accent); }
 
 .talk-title {
   color: var(--text);
+  transition: color 0.2s;
+  text-decoration: none;
 }
+.talk-title:hover { color: var(--accent); }
 
 /* ── Contact ───────────────────────────────────────── */
 #contact > p {
-  color: #999;
+  color: #aaa;
   margin-bottom: 1.5rem;
   font-family: var(--mono);
   font-size: 0.85rem;
@@ -391,7 +394,7 @@ section:last-child { border-bottom: none; }
 }
 
 .contact-label {
-  color: #999;
+  color: #aaa;
   min-width: 6rem;
   font-size: 0.8rem;
 }
@@ -418,5 +421,5 @@ footer {
 @media (max-width: 600px) {
   nav ul { gap: 1.2rem; }
   .talk-event { min-width: 0; }
-  .talks-list a { flex-direction: column; gap: 0.2rem; }
+  .talks-list li { flex-direction: column; gap: 0.2rem; }
 }
